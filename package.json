@@ -1,0 +1,20 @@
+{
+  "name": "@microsoft/generator-azure-devops-extension",
+  "version": "1.0.0",
+  "description": "Generates a basic Azure DevOps extension with support for hot reload and debugging in VS Code",
+  "author": "Microsoft",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/azure-devops-extension-yeoman-generator"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^4.0.0"
+  }
+}
