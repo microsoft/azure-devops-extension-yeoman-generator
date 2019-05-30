@@ -28,20 +28,20 @@ module.exports = class extends Generator {
         type: "input",
         name: "id",
         message: "Extension ID",
-        default: "hot-reload-and-debug",
+        default: "my-extension-id",
         validate: input => input.indexOf(" ") < 0 || "No spaces allowed"
       },
       {
         type: "input",
         name: "name",
         message: "Extension name",
-        default: "Hot Reload and Debug"
+        default: "My Extension Name"
       },
       {
         type: "input",
         name: "description",
         message: "Extension description",
-        default: "Use hot reload and debug directly in VS Code"
+        default: "A short description of my extension"
       },
       {
         type: "input",

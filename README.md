@@ -1,6 +1,6 @@
 # Azure DevOps extension generator
 
-Generates a basic Azure DevOps extension with support for hot reload and debugging in VS Code
+Generates a basic Azure DevOps extension with support for hot reload and debugging in VS Code. For more information about how hot reload and debugging works with Azure DevOps extensions, please see the [azure-devops-extension-hot-reload-and-debug](https://github.com/microsoft/azure-devops-extension-hot-reload-and-debug) repo, as well as the accompanying [blog post](https://devblogs.microsoft.com/devops/).
 
 ## Installation
 
@@ -44,7 +44,9 @@ Running the generator will result in the following file structure:
 └── webpack.config.js
 ```
 
-Refer to the generated `README.md` file to learn more about how the project works.
+## What's next?
+
+Now that you have generated a new project you are ready to start debugging. Refer to the generated readme in your new project for instructions on how get started. You should also check out our [azure-devops-extension-hot-reload-and-debug](https://github.com/microsoft/azure-devops-extension-hot-reload-and-debug#deploy-your-dev-extension-to-azure-devops) repo for an in depth look at how these features work.
 
 ## Contributing
 
