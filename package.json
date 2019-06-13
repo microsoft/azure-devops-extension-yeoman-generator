@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/generator-azure-devops-extension",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates a basic Azure DevOps extension with support for hot reload and debugging in VS Code",
   "author": "Microsoft",
   "license": "MIT",
