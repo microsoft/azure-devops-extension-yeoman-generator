@@ -1,10 +1,10 @@
 # Azure DevOps extension generator
 
-Generates a basic Azure DevOps extension with support for hot reload and debugging in VS Code. For more information about how hot reload and debugging works with Azure DevOps extensions, please see the [azure-devops-extension-hot-reload-and-debug](https://github.com/microsoft/azure-devops-extension-hot-reload-and-debug) repo, as well as the accompanying [blog post](https://devblogs.microsoft.com/devops/).
+Generates a basic Azure DevOps extension with support for hot reload and debugging in VS Code. For more information about how hot reload and debugging works with Azure DevOps extensions, please see the [azure-devops-extension-hot-reload-and-debug](https://github.com/microsoft/azure-devops-extension-hot-reload-and-debug) repo, as well as the accompanying [blog post](https://devblogs.microsoft.com/devops/streamlining-azure-devops-extension-development/).
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-azure-devops-extension using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-azure-devops-extension using [npm](https://www.npmjs.com/) (we assume you have pre-installed [Node.js](https://nodejs.org/)).
 
 ```shell
 npm install -g yo
@@ -46,7 +46,7 @@ Running the generator will result in the following file structure:
 
 ## What's next?
 
-Now that you have generated a new project you are ready to start debugging. Refer to the generated readme in your new project for instructions on how get started. You should also check out our [azure-devops-extension-hot-reload-and-debug](https://github.com/microsoft/azure-devops-extension-hot-reload-and-debug#deploy-your-dev-extension-to-azure-devops) repo for an in depth look at how these features work.
+Now that you have generated a new project, you are ready to start debugging. Refer to the generated readme in your new project for instructions on how to get started. You should also check out our [azure-devops-extension-hot-reload-and-debug](https://github.com/microsoft/azure-devops-extension-hot-reload-and-debug#deploy-your-dev-extension-to-azure-devops) repo for an in-depth look at how these features work.
 
 ## Contributing
 
