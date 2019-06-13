@@ -8,24 +8,27 @@ module.exports = class extends Generator {
         name: "id",
         message: "Extension ID",
         default: "my-extension-id",
-        validate: input => input.indexOf(" ") < 0 || "No spaces allowed"
+        validate: this.validateId.bind(this)
       },
       {
         type: "input",
         name: "name",
         message: "Extension name",
-        default: "My Extension Name"
+        default: "My Extension Name",
+        validate: this.validateNotEmpty.bind(this)
       },
       {
         type: "input",
         name: "description",
         message: "Extension description",
-        default: "A short description of my extension"
+        default: "A short description of my extension",
+        validate: this.validateNotEmpty.bind(this)
       },
       {
         type: "input",
         name: "publisher",
-        message: "Extension publisher ID"
+        message: "Extension publisher ID",
+        validate: this.validateNotEmpty.bind(this)
       }
     ]);
   }
@@ -43,5 +46,19 @@ module.exports = class extends Generator {
       this.destinationPath(this.answers.id, "_gitignore"),
       this.destinationPath(this.answers.id, ".gitignore")
     );
+  }
+
+  validateId(input) {
+    const notEmpty = this.validateNotEmpty(input);
+
+    if (typeof notEmpty === "string") {
+      return notEmpty;
+    }
+
+    return (input && input.indexOf(" ") < 0) || "No spaces allowed";
+  }
+
+  validateNotEmpty(input) {
+    return (input && !!input.trim()) || "Cannot be left empty";
   }
 };
